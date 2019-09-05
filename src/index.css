@@ -11,3 +11,259 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.body {
+  background-color: #80808033;
+}
+
+.nav {
+  text-align: left;
+  padding-left: 60px;
+  position: absolute;
+  padding-top: 12px;
+}
+
+.home-link {
+  display: inline-block;
+  margin-right: 55px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: .2s ease;
+}
+
+.authors-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: .2s ease;
+}
+
+.home-link:hover, .authors-link:hover {
+  transform: translateY(-10%);
+}
+
+.header-pic {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+.main-section {
+  position: relative;
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -290px auto 0 auto;
+  transition: 0.2s ease;
+  padding: 0;
+}
+
+.authors-container {
+  background-image: url('https://www.barraques.cat/pngfile/big/123-1233654_misty-forest-different-types-of-forests-in-world.jpg');
+  background-size: cover;
+}
+
+.authors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 0 0 0;
+  transition: 0.2s ease;
+}
+
+
+.article {
+  background-color: white;
+  list-style-type: none;
+  min-height: 412px;
+  border-radius: 3px;
+  padding: 15px;
+  margin: 0px 15px 20px 15px;
+  box-shadow: 1px 1px 25px 1px #00000024;
+  transition: .2s ease;
+}
+
+.article:hover {
+  transform: translateY(-0.8%);
+}
+
+.author {
+  background-color: #ffffffeb;
+  border-radius: 3px;
+  width: 280px;
+  margin: 0 40px 25px 40px;
+  padding: 10px;
+  box-shadow: 1px 1px 25px 1px #00000045
+}
+
+.container {
+  background-image: url('https://img.pngio.com/forest-background-the-linux-foundation-forest-background-1800_1013.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.article-container {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: 15vh;
+  transform: translate(-50%, 0%);
+  background-color: #ffffffeb;
+  border-radius: 3px;
+  padding: 20px;
+  box-shadow: 1px 1px 25px 1px #00000045;
+}
+
+.articles > a {
+  text-decoration: none;
+}
+
+.home-img {
+  width: 225px;
+  height: 200px;
+}
+
+.author-img {
+  filter: grayscale(100%);
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+}
+
+.article-img {
+  float: left;
+  shape-outside: margin-box;
+  padding-right: 15px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.biography-title {
+  color: seagreen;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.home-title {
+  color: #000;
+  max-width: 225px;
+  overflow-wrap: break-word;
+}
+
+.article-title {
+  text-align: initial;
+}
+
+.home-body {
+  color: #000;
+  width: 225px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: initial;
+  text-overflow: ellipsis;
+}
+
+.author-body, .article-body {
+  width: 280px;
+  padding-left: 5px;
+  text-align: initial;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.article-body {
+  width: 800px;
+  line-height: 1.5;
+}
+
+.home-published, .article-published {
+  color: #000;
+  text-align: initial;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.article-published {
+  color: darkgreen;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.home-author, .article-author {
+  color: #000;
+  text-align: initial;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.article-author {
+  color: darkgreen;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.author-name {
+  font-family: 'Pangolin', cursive;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.backward {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 155px;
+  left: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.forward {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 155px;
+  right: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+@media (max-width: 800px) {
+  .article-img {
+    float: none;
+  }
+
+  .article-body {
+    width: auto;
+    max-height: 325px;
+    overflow: scroll;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 800px) {
+  .article-body {
+    width: 800px;
+  }
+
+}  
