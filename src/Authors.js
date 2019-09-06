@@ -9,7 +9,7 @@ function createList(author) {
     <li key={author._id} className='author'>
       <p className='author-name'>{author.name}</p>
       <div className='img-container'>
-        <img className='author-img' src={author.avatar.path}></img>
+        <img className='author-img' src={author.avatar.path} alt=''></img>
       </div>
       <p className='biography-title'>Biography</p>
       <p className='author-body'>{author.description}</p>

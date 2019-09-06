@@ -25,7 +25,7 @@ function Article({ match }) {
         <title>Article</title>
       </Helmet>
       <div className="article-container">
-        <img src={article.image.path} className='article-img'></img>
+        <img className='article-img' src={article.image.path} alt=''></img>
         <h4 className='article-title'>{article.title}</h4>
         <ReactMarkdown source={article.body} className='article-body'></ReactMarkdown>
         <p className='article-published'>Published: {article.published_on}</p>

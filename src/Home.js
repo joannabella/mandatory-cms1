@@ -9,7 +9,7 @@ function createList(article) {
   return (
     <Link to={'/article/' + article._id} key={article._id}>
       <li className='article'>
-        <img src={article.image.path} className='home-img'></img>
+        <img className='home-img' src={article.image.path} alt=''></img>
         <h4 className='home-title'>{article.title}</h4>
         <p className='home-body'>{article.body}</p>
         <p className='home-published'>Published: {article.published_on}</p>
@@ -57,7 +57,7 @@ function Home() {
         <title>Home</title>
       </Helmet>
       <header className='header'>
-        <img src='https://www.linuxfoundation.org/wp-content/uploads/2016/12/lf_background_trees.jpg' className='header-pic'></img>
+        <img className='header-pic' src='https://www.linuxfoundation.org/wp-content/uploads/2016/12/lf_background_trees.jpg' alt=''></img>
       </header>
       <section className='main-section'>
         <ul className='articles'>

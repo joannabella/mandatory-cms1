@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import Home from './Home';
 import Article from './Article';
 import Authors from './Authors';
